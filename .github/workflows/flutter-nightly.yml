@@ -9,3 +9,5 @@ jobs:
     secrets: inherit
     with:
       upload-artifact: true
+    permissions:
+      packages: write      
