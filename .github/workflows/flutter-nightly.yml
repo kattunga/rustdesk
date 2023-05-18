@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
 
 permissions: write-all
+
+env:
+  RENDEZVOUS_SERVER: ${{ secrets.RENDEZVOUS_SERVER }}
+  RS_PUB_KEY: ${{ secrets.RS_PUB_KEY }}
   
 jobs:
   run-flutter-nightly-build:
